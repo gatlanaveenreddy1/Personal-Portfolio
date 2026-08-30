@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio of Gatla Naveen Reddy. B.Tech ECE Student and Web Developer specializing in Python, JavaScript, HTML, CSS, and SQL.">
+    <meta name="keywords" content="Portfolio, Gatla Naveen Reddy, ECE Student, Web Developer, Python, JavaScript, SQL, MATLAB, NxtWave, Kalasalingam Academy">
+    <meta name="author" content="Gatla Naveen Reddy">
+    <title>Gatla Naveen Reddy | ECE & Web Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css?v=1.1">
+</head>
+<body class="dark-theme">
+    <!-- Interactive Background Grid & Cursor Glow -->
+    <div class="grid-overlay"></div>
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+
+    <!-- Sticky Floating Navigation Header -->
+    <header class="navbar-header" id="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">
+                <img src="assets/profile.png" alt="Naveen Portrait" class="logo-avatar" draggable="false">
+                <span class="logo-text">Naveen</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active" id="link-home">Home</a></li>
+                    <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+                    <li><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+                    <li><a href="#experience" class="nav-link" id="link-experience">Education</a></li>
+                    <li><a href="#training" class="nav-link" id="link-training">Training</a></li>
+                    <li><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link" id="link-certifications">Certificates</a></li>
+                    <li><a href="#coding-profiles" class="nav-link" id="link-coding-profiles">Coding Profiles</a></li>
+                    <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Switcher Toggle -->
+                <button class="theme-toggle" id="theme-btn" aria-label="Toggle light and dark theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                
+                <!-- Mobile Hamburger Button -->
+                <button class="mobile-menu-toggle" id="hamburger-btn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Home Section -->
+        <section id="home" class="hero-section section-reveal">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="badge-accent">ECE student & Web developer</div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Naveen Reddy</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I'm a <span id="typed-text" class="typed-cursor-parent"></span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        B.Tech student in Electronics and Communication Engineering with hands-on experience developing web applications. Exploring Python, JavaScript, React.js, and modern tools to build practical systems.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary" id="hero-btn-work">
+                            View My Projects <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">
+                            Get In Touch
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/gatlanaveenreddy1" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub" class="social-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/naveen-reddy-gatla/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" class="social-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:gatlanaveenreddy1@gmail.com" aria-label="Email" title="Email" class="social-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-media">
+                    <div class="avatar-card-glow"></div>
+                    <div class="avatar-card">
+                        <div class="card-inner">
+                            <div class="profile-image-container avatar-text-container">
+                                <div class="avatar-text-content">
+                                    <h3 class="avatar-replacement-title">Full Stack Web Development</h3>
+                                </div>
+                            </div>
+                            <!-- Floating Badges -->
+                            <div class="floating-tech-badge badge-python" title="Python">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+                            <div class="floating-tech-badge badge-html" title="HTML5">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="floating-tech-badge badge-css" title="CSS3">
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                            <div class="floating-tech-badge badge-node" title="Node.js">
+                                <i class="fa-brands fa-node-js"></i>
+                            </div>
+                            <div class="floating-tech-badge badge-react" title="React.js">
+                                <i class="fa-brands fa-react"></i>
+                            </div>
+                            <div class="floating-tech-badge badge-js" title="JavaScript">
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                            <div class="floating-tech-badge badge-bootstrap" title="Bootstrap">
+                                <i class="fa-brands fa-bootstrap"></i>
+                            </div>
+                            <div class="floating-tech-badge badge-sql" title="SQL Database">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About Me section">
+                <span>Scroll Down</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tagline">My Story</span>
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <div class="header-divider"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="paragraph-lead">
+                            I am a detail-oriented Electronics and Communication Engineering (ECE) student at <a href="https://kalasalingam.ac.in" target="_blank" rel="noopener noreferrer" class="body-link">Kalasalingam Academy of Research and Education</a> with a strong passion for web development and software engineering.
+                        </p>
+                        <p class="paragraph-body">
+                            My engineering background, combined with a love for coding, has helped me build hands-on skills in HTML, CSS, Bootstrap, JavaScript, Python, and SQL, while expanding into React.js and Node.js. I focus on writing clean code to solve practical, real-world problems.
+                        </p>
+                        <p class="paragraph-body">
+                            Through hands-on projects—ranging from task managers and price comparators to MATLAB/Simulink traffic systems—I have built strong debugging and analytical skills. I am eager to contribute to collaborative software teams, internships, and front-end development roles.
+                        </p>
+                        <div class="about-cta-container">
+                            <a href="#contact" class="btn btn-primary" id="hire-me-btn">
+                                <i class="fa-solid fa-paper-plane"></i> Contact Me
+                            </a>
+                            <a href="assets/resume.pdf" download class="btn btn-secondary" id="download-cv-btn">
+                                <i class="fa-solid fa-download"></i> Download CV
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats-grid">
+                        <div class="stat-card glass-card">
+                            <h3 class="stat-number gradient-text" id="stat-cgpa">6.6</h3>
+                            <p class="stat-label">B.Tech CGPA</p>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <h3 class="stat-number gradient-text" id="stat-projects-count">4</h3>
+                            <p class="stat-label">Key Projects</p>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <h3 class="stat-number gradient-text" id="stat-certificates-count">4</h3>
+                            <p class="stat-label">Certificates Earned</p>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <h3 class="stat-number gradient-text" id="stat-tenth-gpa">99%</h3>
+                            <p class="stat-label">10th Class Percentage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tagline">My Toolkit</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="header-divider"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Languages & Databases Card -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-blue">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h3>Languages & Databases</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">94%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-python"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">72%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-js"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL (Relational Databases)</span>
+                                    <span class="skill-percentage">100%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-sql"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Technologies Card -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-purple">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <h3>Web Technologies</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5 & CSS3</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-html-css"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Bootstrap Framework</span>
+                                    <span class="skill-percentage">100%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-bootstrap"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Flexbox & Responsive Design</span>
+                                    <span class="skill-percentage">55%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-flexbox"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-percentage">20%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-react"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percentage">0%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-node"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DSA & Problem Solving Card -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-green">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <h3>DSA & Problem Solving</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Data Structures</span>
+                                    <span class="skill-percentage">34%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-dsa"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Algorithms & Problem Solving</span>
+                                    <span class="skill-percentage">30%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-algorithms"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI & LLM Applications Card -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-cyan">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <h3>AI & LLM Applications</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Generative AI</span>
+                                    <span class="skill-percentage">24%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-genai"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Building LLM Applications</span>
+                                    <span class="skill-percentage">6%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-llm"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Engineering Tools Card -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-orange">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <h3>Tools & Platforms</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-git-github"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">VS Code Editor</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-vscode"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MATLAB & Simulink</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-matlab"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Antigravity Coding Platform</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-bar progress-antigravity"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="experience" class="experience-section section-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tagline">My Path</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="header-divider"></div>
+                </div>
+                
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- B.Tech -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2023 - 2027</span>
+                            <h3 class="timeline-title">B.Tech in Electronics and Communication Engineering</h3>
+                            <h4 class="timeline-company"><a href="https://kalasalingam.ac.in" target="_blank" rel="noopener noreferrer" class="timeline-link">Kalasalingam Academy of Research and Education</a></h4>
+                            <p class="timeline-description">
+                                Actively learning principles of signal processing, electronic architectures, embedded configurations, programming fundamentals, and building industry projects.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>CGPA: 6.6/10</span><span>MATLAB</span><span>Simulink</span><span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Intermediate -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2021 - 2023</span>
+                            <h3 class="timeline-title">Intermediate (MPC)</h3>
+                            <h4 class="timeline-company">Oxford Junior College</h4>
+                            <p class="timeline-description">
+                                Specialized in Mathematics, Physics, and Chemistry (MPC).
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Percentage: 57.6%</span><span>MPC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10th Class -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2020 - 2021</span>
+                            <h3 class="timeline-title">10th Class Secondary Education</h3>
+                            <h4 class="timeline-company"><a href="https://srichaitanyaschool.net/" target="_blank" rel="noopener noreferrer" class="timeline-link">Sri Chaitanya School</a></h4>
+                            <p class="timeline-description">
+                                Completed primary and secondary school foundations.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Percentage: 99%</span><span>Secondary Education</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Training Section -->
+        <section id="training" class="training-section section-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tagline">Professional Development</span>
+                    <h2 class="section-title">Training & <span class="gradient-text">Courses</span></h2>
+                    <div class="header-divider"></div>
+                </div>
+
+                <!-- Training Program Banner -->
+                <div class="training-banner glass-card">
+                    <div class="training-featured-glow"></div>
+                    <div class="training-banner-content">
+                        <div class="training-banner-left">
+                            <a href="https://learning.ccbp.in/my-journey?tab=growth_cycles" target="_blank" rel="noopener noreferrer" class="training-provider-badge">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span>NxtWave CCBP 4.0 Academy</span>
+                            </a>
+                            <h3 class="training-featured-title">Industry Ready Certification in Full-stack Development</h3>
+                            <p class="training-featured-description">
+                                Comprehensive, self-paced program covering front-end, back-end, databases, DSA, and deployment — with hands-on projects and real-world application building.
+                            </p>
+                            <a href="https://learning.ccbp.in/my-journey?tab=growth_cycles" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm training-journey-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> View NxtWave Learning Journey
+                            </a>
+                        </div>
+                        <div class="training-banner-stats">
+                            <div class="training-stat-item">
+                                <span class="training-stat-number gradient-text">6</span>
+                                <span class="training-stat-label">Growth Cycles</span>
+                            </div>
+                            <div class="training-stat-item">
+                                <span class="training-stat-number gradient-text">13</span>
+                                <span class="training-stat-label">Courses</span>
+                            </div>
+                            <div class="training-stat-item">
+                                <span class="training-stat-number gradient-text">4</span>
+                                <span class="training-stat-label">Certificates</span>
+                            </div>
+                            <div class="training-stat-item">
+                                <span class="training-stat-number gradient-text">155</span>
+                                <span class="training-stat-label">Problems Solved</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Growth Cycles Container -->
+                <div class="gc-container">
+
+                    <!-- Growth Cycle 1 -->
+                    <div class="gc-card glass-card">
+                        <div class="gc-header">
+                            <div class="gc-header-left">
+                                <span class="gc-label">Growth Cycle 1</span>
+                                <h3 class="gc-title">Projects Champ Growth Cycle</h3>
+                            </div>
+                            <div class="gc-header-right">
+                                <div class="gc-status-badge gc-badge-completed">
+                                    <i class="fa-solid fa-circle-check"></i> Completed
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gc-courses-grid">
+                            <div class="gc-course-card">
+                                <div class="gc-course-top">
+                                    <div class="gc-course-icon gc-icon-blue"><i class="fa-brands fa-html5"></i></div>
+                                    <div class="gc-course-status gc-status-done"><i class="fa-solid fa-circle-check"></i></div>
+                                </div>
+                                <span class="gc-course-label">Course</span>
+                                <h4 class="gc-course-title">1. Build Your Own Static Website</h4>
+                                <p class="gc-course-desc">Build a static website that appears beautifully on mobile screens. Develop a Tourism website to browse through the content, videos, and images of popular destinations, websites to host conferences and events, etc. Learn to use tools and technologies such as HTML, CSS and Bootstrap.</p>
+                                <div class="gc-course-tags">
+                                    <span class="tag-html">HTML</span><span class="tag-css">CSS</span><span class="tag-bootstrap">Bootstrap</span>
+                                </div>
+                            </div>
+                            <div class="gc-course-card">
+                                <div class="gc-course-top">
+                                    <div class="gc-course-icon gc-icon-purple"><i class="fa-solid fa-mobile-screen"></i></div>
+                                    <div class="gc-course-status gc-status-done"><i class="fa-solid fa-circle-check"></i></div>
+                                </div>
+                                <span class="gc-course-label">Course</span>
+                                <h4 class="gc-course-title">2. Build Your Own Responsive Website</h4>
+                                <p class="gc-course-desc">Build a responsive website that appears beautifully on a screen of any size. Develop a food munch website, an E-commerce product listing website for small business owners using bootstrap fundamental concepts. Use tools and technologies such as HTML, CSS, and Bootstrap.</p>
+                                <div class="gc-course-tags">
+                                    <span class="tag-html">HTML</span><span class="tag-css">CSS</span><span class="tag-bootstrap">Bootstrap</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Growth Cycle 2 -->
+                    <div class="gc-card glass-card">
+                        <div class="gc-header">
+                            <div class="gc-header-left">
+                                <span class="gc-label">Growth Cycle 2</span>
+                                <h3 class="gc-title">Programming Master Growth Cycle</h3>
+                            </div>
+                            <div class="gc-header-right">
+                                <div class="gc-status-badge gc-badge-completed">
+                                    <i class="fa-solid fa-circle-check"></i> Completed
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gc-courses-grid">
+                            <div class="gc-course-card">
+                                <div class="gc-course-top">
+                                    <div class="gc-course-icon gc-icon-blue"><i class="fa-solid fa-database"></i></div>
+                                    <div class="gc-course-status gc-status-done"><i class="fa-solid fa-circle-check"></i></div>
+                                </div>
+                                <span class="gc-course-label">Course</span>
+                                <h4 class="gc-course-title">1. Introduction to Databases</h4>
+                                <p class="gc-course-desc">Learn about the incredibly prevalent databases today. Through this course, you'll develop strong fundamentals and be proficient in concepts related to Databases and DBMS. Most importantly, you'll also be able to perform powerful queries on databases using SQL.</p>
+                                <div class="gc-course-tags">
+                                    <span class="tag-sql">SQL</span><span class="tag-db">Databases</span>
+                                </div>
+                            </div>
+                            <div class="gc-course-card">
+                                <div class="gc-course-top">
+                                    <div class="gc-course-icon gc-icon-green"><i class="fa-brands fa-python"></i></div>
+                                    <div class="gc-course-progress">
+                                        <span class="gc-progress-text">94%</span>
+                                    </div>
+                                </div>
+                                <span class="gc-course-label">Course</span>
+                                <h4 class="gc-course-title">2. Programming Foundations</h4>
+                                <p class="gc-course-desc">Learning to code is useful no matter what your career ambitions are. In this course, we demystify programming. You'll learn the fundamental concepts of programming, learn to write code in Python and solve the challenging coding questions for practice along the way.</p>
+                                <div class="gc-course-tags">
+                                    <span class="tag-python">Python</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Growth Cycle 3 -->
+                    <div class="gc-card glass-card">
+                        <div class="gc-header">
+                            <div class="gc-header-left">
+                                <span class="gc-label">Growth Cycle 3</span>
+                                <h3 class="gc-title">Dynamic Websites Creator Growth Cycle</h3>
+                            </div>
+                            <div class="gc-header-right">
+                                <div class="gc-status-badge gc-badge-completed">
+                                    <i class="fa-solid fa-circle-check"></i> Completed
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gc-courses-grid">
+                            <div class="gc-course-card">
+                                <div class="gc-course-top">
+                                    <div class="gc-course-icon gc-icon-green"><i class="fa-brands fa-python"></i></div>
+                                    <div class="gc-course-progress">
+                                        <span class="gc-progress-text">94%</span>
+                                    </div>
+                                </div>
+                                <span class="gc-course-label">Course</span>
+                                <h4 class="gc-course-title">1. Programming Foundations</h4>
+                                <p class="gc-course-desc">Learning to code is useful no matter what your career ambitions are. In this course, we demystify programming. You'll learn the fundamental concepts of programming, learn to write code in Python and solve the challenging coding questions for practice along the way.</p>
+                                <div class="gc-course-tags">
+                                    <span class="tag-python">Python</span>
+                                </div>
+                            </div>
+                            <div class="gc-course-card">
+                                <div class="gc-course-top">
+                                    <div class="gc-course-icon gc-icon-purple"><i class="fa-solid fa-display"></i></div>
+                                    <div class="gc-course-progress">
+                                        <span class="gc-progress-text">95%</span>
+                                    </div>
+                                </div>
+                                <span class="gc-course-label">Course</span>
+                                <h4 class="gc-course-title">2. Build Your Own Dynamic Web Application</h4>
+                                <p class="gc-course-desc">In this course, you will understand the fundamental concepts in JavaScript and apply them to build dynamic and interactive web applications like Todos Application, Counter, Bomb defuser, Chatbot Web app, Wikipedia Search Application, etc.</p>
+                                <div class="gc-course-tags">
+                                    <span class="tag-html">HTML</span><span class="tag-css">CSS</span><span class="tag-js">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Growth Cycle 4 -->
+                    <div class="gc-card glass-card gc-card-active">
+                        <div class="gc-header">
+                            <div class="gc-header-left">
+                                <span class="gc-label">Growth Cycle 4</span>
+                                <h3 class="gc-title">Full Stack Foundations Growth Cycle</h3>
+                            </div>
+                            <div class="gc-header-right">
+                                <div class="gc-status-badge gc-badge-processing">
+                                    <i class="fa-solid fa-spinner fa-spin"></i> Processing
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gc-courses-grid">
+                            <div class="gc-course-card">
+                                <div class="gc-course-top">
+                                    <div class="gc-course-icon gc-icon-orange"><i class="fa-brands fa-js"></i></div>
+                                    <div class="gc-course-progress">
+                                        <span class="gc-progress-text">72%</span>
+                                    </div>
+                                </div>
+                                <span class="gc-course-label">Course</span>
+                                <h4 class="gc-course-title">1. JavaScript Essentials</h4>
+                                <p class="gc-course-desc">In this course, you will learn the concepts like Events, Scope, Hoisting, this, ES6 Classes, Error handling, More about Objects and how to handle Asynchronous JavaScript.</p>
+                                <div class="gc-course-tags">
+                                    <span class="tag-js">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="gc-course-card">
+                                <div class="gc-course-top">
+                                    <div class="gc-course-icon gc-icon-purple"><i class="fa-solid fa-mobile-screen"></i></div>
+                                    <div class="gc-course-progress">
+                                        <span class="gc-progress-text">55%</span>
+                                    </div>
+                                </div>
+                                <span class="gc-course-label">Course</span>
+                                <h4 class="gc-course-title">2. Responsive Web Design using Flexbox</h4>
+                                <p class="gc-course-desc">This course will help you to develop responsive layouts using CSS Flexbox and CSS Media Queries.</p>
+                                <div class="gc-course-tags">
+                                    <span class="tag-flexbox">Flexbox</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Growth Cycle 5 -->
+                    <div class="gc-card glass-card">
+                        <div class="gc-header">
+                            <div class="gc-header-left">
+                                <span class="gc-label">Growth Cycle 5</span>
+                                <h3 class="gc-title">Full Stack Advanced Growth Cycle</h3>
+                            </div>
+                            <div class="gc-header-right">
+                                <div class="gc-status-badge gc-badge-processing">
+                                    <i class="fa-solid fa-spinner fa-spin"></i> Processing
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gc-courses-grid">
+                            <div class="gc-course-card">
+                                <div class="gc-course-top">
+                                    <div class="gc-course-icon gc-icon-blue"><i class="fa-brands fa-git-alt"></i></div>
+                                    <div class="gc-course-progress">
+                                        <span class="gc-progress-text">80%</span>
+                                    </div>
+                                </div>
+                                <span class="gc-course-label">Course</span>
+                                <h4 class="gc-course-title">1. Developer Foundations</h4>
+                                <p class="gc-course-desc">You will learn the essentials of Operating Systems, Networks and use some essential developer tools like Command-Line and Git. You'll learn to version your software with Git and push your code to GitHub.</p>
+                                <div class="gc-course-tags">
+                                    <span class="tag-git">Git</span>
+                                </div>
+                            </div>
+                            <div class="gc-course-card">
+                                <div class="gc-course-top">
+                                    <div class="gc-course-icon gc-icon-green"><i class="fa-brands fa-node-js"></i></div>
+                                    <div class="gc-course-progress">
+                                        <span class="gc-progress-text gc-text-muted">0%</span>
+                                    </div>
+                                </div>
+                                <span class="gc-course-label">Course</span>
+                                <h4 class="gc-course-title">2. Node JS</h4>
+                                <p class="gc-course-desc">In this course, you'll learn how to build a backend web application using one of the most popular and mature Javascript web development frameworks, Express. This course covers various aspects of web application development like database, routing, urls etc.</p>
+                                <div class="gc-course-tags">
+                                    <span class="tag-node">Node JS</span>
+                                </div>
+                            </div>
+                            <div class="gc-course-card">
+                                <div class="gc-course-top">
+                                    <div class="gc-course-icon gc-icon-cyan"><i class="fa-brands fa-react"></i></div>
+                                    <div class="gc-course-progress">
+                                        <span class="gc-progress-text gc-text-muted">0%</span>
+                                    </div>
+                                </div>
+                                <span class="gc-course-label">Course</span>
+                                <h4 class="gc-course-title">3. React JS - Getting Started</h4>
+                                <p class="gc-course-desc">In this course, you will learn how to build dynamic web applications with the React JS library. When you finish this course, you will be comfortable in creating a modern, clean, and maintainable application in React JS, from scratch.</p>
+                                <div class="gc-course-tags">
+                                    <span class="tag-react">React JS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Growth Cycle 6 -->
+                    <div class="gc-card glass-card">
+                        <div class="gc-header">
+                            <div class="gc-header-left">
+                                <span class="gc-label">Growth Cycle 6</span>
+                                <h3 class="gc-title">Elementary CP Growth Cycle</h3>
+                            </div>
+                            <div class="gc-header-right">
+                                <div class="gc-status-badge gc-badge-processing">
+                                    <i class="fa-solid fa-spinner fa-spin"></i> Processing
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gc-courses-grid">
+                            <div class="gc-course-card">
+                                <div class="gc-course-top">
+                                    <div class="gc-course-icon gc-icon-orange"><i class="fa-solid fa-diagram-project"></i></div>
+                                    <div class="gc-course-progress">
+                                        <span class="gc-progress-text">34%</span>
+                                    </div>
+                                </div>
+                                <span class="gc-course-label">Course</span>
+                                <h4 class="gc-course-title">1. Phase 1 : Data Structures and Algorithms</h4>
+                                <p class="gc-course-desc">Build strong foundations in data structures and algorithms by mastering linked lists, stacks, queues, simple sorting techniques and searching algorithms.</p>
+                                <div class="gc-course-tags">
+                                    <span class="tag-dsa">Linked Lists</span>
+                                </div>
+                            </div>
+                            <div class="gc-course-card">
+                                <div class="gc-course-top">
+                                    <div class="gc-course-icon gc-icon-purple"><i class="fa-solid fa-chart-line"></i></div>
+                                    <div class="gc-course-progress">
+                                        <span class="gc-progress-text gc-text-muted">0%</span>
+                                    </div>
+                                </div>
+                                <span class="gc-course-label">Course</span>
+                                <h4 class="gc-course-title">2. Phase 2 : Advanced DSA</h4>
+                                <p class="gc-course-desc">Enhance your skills in organizing and processing data by diving into essential techniques for structuring, sorting, and searching information. Get ready to unlock new capabilities and boost your problem-solving skills.</p>
+                                <div class="gc-course-tags">
+                                    <span class="tag-dp">Dynamic Programming (DP)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Filterable Grid) -->
+        <section id="projects" class="projects-section section-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tagline">My Creations</span>
+                    <h2 class="section-title">Selected Projects</h2>
+                    <div class="header-divider"></div>
+                </div>
+                
+                <!-- Category Filter Controls -->
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="webdev">Web Development</button>
+                    <button class="filter-btn" data-filter="simulation">ECE & Simulation</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1 (Adaptive Traffic Signal) -->
+                    <div class="project-card glass-card" data-category="simulation">
+                        <div class="project-thumbnail-wrapper">
+                            <div class="project-thumbnail thumbnail-gradient-3">
+                                <i class="fa-solid fa-traffic-light thumbnail-icon"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-link-icon" aria-label="GitHub Repository">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#" class="overlay-link-icon" aria-label="Live Demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">ECE & Simulation | Hackathon 2nd Prize</span>
+                            <h3 class="project-title">Adaptive Traffic Signal Controller</h3>
+                            <p class="project-text">
+                                Designed and simulated an adaptive 4-way intersection signal control system in MATLAB Simulink and Stateflow. Features sensor input models for vehicle counting and fuzzy logic controllers to dynamically minimize wait times.
+                            </p>
+                            <div class="project-stack">
+                                <span>MATLAB</span><span>Simulink</span><span>Stateflow</span><span>Fuzzy Logic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 (Price Comparator) -->
+                    <div class="project-card glass-card" data-category="webdev">
+                        <div class="project-thumbnail-wrapper">
+                            <div class="project-thumbnail thumbnail-gradient-2">
+                                <i class="fa-solid fa-magnifying-glass-dollar thumbnail-icon"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-link-icon" aria-label="GitHub Repository">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#" class="overlay-link-icon" aria-label="Live Demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Web Development</span>
+                            <h3 class="project-title">Price Comparator Hub</h3>
+                            <p class="project-text">
+                                Developed a responsive web app to compare product prices across websites, showcasing a user-friendly product detail comparison interface.
+                            </p>
+                            <div class="project-stack">
+                                <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 (Personal Portfolio) -->
+                    <div class="project-card glass-card" data-category="webdev">
+                        <div class="project-thumbnail-wrapper">
+                            <div class="project-thumbnail thumbnail-gradient-1">
+                                <i class="fa-solid fa-laptop-code thumbnail-icon"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-link-icon" aria-label="GitHub Repository">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#" class="overlay-link-icon" aria-label="Live Demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Web Development</span>
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-text">
+                                Developed this highly responsive, glassmorphic portfolio displaying skills, projects, qualifications, certifications, and contact options.
+                            </p>
+                            <div class="project-stack">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Theme Toggle</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 (To-Do List) -->
+                    <div class="project-card glass-card" data-category="webdev">
+                        <div class="project-thumbnail-wrapper">
+                            <div class="project-thumbnail thumbnail-gradient-4">
+                                <i class="fa-solid fa-list-check thumbnail-icon"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-link-icon" aria-label="GitHub Repository">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://naveentod.ccbp.tech" target="_blank" rel="noopener noreferrer" class="overlay-link-icon" aria-label="Live Demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Web Development</span>
+                            <h3 class="project-title">To-Do List Application</h3>
+                            <p class="project-text">
+                                Built an interactive task management system supporting CRUD capabilities (creating, reading, updating, completing, and deleting tasks).
+                            </p>
+                            <div class="project-stack">
+                                <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="skills-section section-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tagline">Credentials</span>
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="header-divider"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Certificate 1 -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-blue">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <h3>Static Website Development</h3>
+                                <p>NxtWave CCBP 4.0 Academy</p>
+                            </div>
+                        </div>
+                        <p class="project-text">Issued for mastering clean HTML, CSS layout paradigms, structural design grids, and site deployment principles.</p>
+                        <a href="https://certificates.ccbp.in/academy/static-website?id=CXDFQGCYPJ" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Certificate</a>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-purple">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <h3>Responsive Web Design</h3>
+                                <p>NxtWave CCBP 4.0 Academy</p>
+                            </div>
+                        </div>
+                        <p class="project-text">Issued for proficiency in responsive grids, Bootstrap components, flexible Flexbox layout, and CSS media queries.</p>
+                        <a href="https://certificates.ccbp.in/academy/build-your-own-responsive-website?id=UQNWTPZRCV" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Certificate</a>
+                    </div>
+
+                    <!-- Certificate 3 -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-orange">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <h3>Dynamic Web Applications</h3>
+                                <p>NxtWave CCBP 4.0 Academy</p>
+                            </div>
+                        </div>
+                        <p class="project-text">Issued for coding programmatic interactions, DOM tree manipulation, JavaScript state controllers, and REST API integration.</p>
+                        <a href="https://certificates.ccbp.in/academy/dynamic-web-application?id=FJATPJFQZY" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Certificate</a>
+                    </div>
+
+                    <!-- Certificate 4 -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-blue">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <h3>SQL - Databases</h3>
+                                <p>NxtWave CCBP 4.0 Academy</p>
+                            </div>
+                        </div>
+                        <p class="project-text">Issued for knowledge in database architectures, writing complex SQL queries, JOIN operations, data aggregates, and tables schemas.</p>
+                        <a href="https://certificates.ccbp.in/academy/introduction-to-databases?id=YIEFZVYCNI" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coding Profiles Section -->
+        <section id="coding-profiles" class="skills-section section-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tagline">Competitive Coding</span>
+                    <h2 class="section-title">Coding Profiles</h2>
+                    <div class="header-divider"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- LeetCode -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-leetcode">
+                                <img src="https://cdn.simpleicons.org/leetcode/FFA116" alt="LeetCode" width="24" height="24" draggable="false">
+                            </div>
+                            <div>
+                                <h3 class="color-leetcode">LeetCode</h3>
+                                <p>Competitive Programming</p>
+                            </div>
+                        </div>
+                        <p class="project-text">
+                            Active coder resolving challenges in data structures, algorithms, and logical problem-solving paradigms.
+                        </p>
+                        <a href="https://leetcode.com/u/Gatla_naveen123/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Profile</a>
+                    </div>
+
+                    <!-- HackerRank -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-hackerrank">
+                                <img src="https://cdn.simpleicons.org/hackerrank/00EA64" alt="HackerRank" width="24" height="24" draggable="false">
+                            </div>
+                            <div>
+                                <h3 class="color-hackerrank">HackerRank</h3>
+                                <p>Skill Certification & Practice</p>
+                            </div>
+                        </div>
+                        <p class="project-text">
+                            Practicing coding fundamentals, system layout paradigms, and language proficiency certifications.
+                        </p>
+                        <a href="https://www.hackerrank.com/profile/gatlanaveenredd1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Profile</a>
+                    </div>
+
+                    <!-- CodeChef -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-codechef">
+                                <img src="https://cdn.simpleicons.org/codechef/5B4638" alt="CodeChef" width="24" height="24" draggable="false">
+                            </div>
+                            <div>
+                                <h3 class="color-codechef">CodeChef</h3>
+                                <p>Contest Participation</p>
+                            </div>
+                        </div>
+                        <p class="project-text">
+                            Competing in monthly/weekly contests, optimizing algorithm design, and improving programming ratings.
+                        </p>
+                        <a href="https://www.codechef.com/users/naveen_1_reddy" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Profile</a>
+                    </div>
+
+                    <!-- GeeksforGeeks -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-geeksforgeeks">
+                                <img src="https://cdn.simpleicons.org/geeksforgeeks/2F8D46" alt="GeeksforGeeks" width="24" height="24" draggable="false">
+                            </div>
+                            <div>
+                                <h3 class="color-geeksforgeeks">GeeksforGeeks</h3>
+                                <p>DSA Practice</p>
+                            </div>
+                        </div>
+                        <p class="project-text">
+                            Learning, coding, and solving diverse computer science and data structures issues.
+                        </p>
+                        <a href="https://www.geeksforgeeks.org/profile/gatlanavecgub" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tagline">Get In Touch</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="header-divider"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info-panel glass-card">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out for internship opportunities, project collaborations, or any technical queries. I will get back to you as soon as possible.</p>
+                        
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span>Mail Me</span>
+                                    <a href="mailto:gatlanaveenreddy1@gmail.com">gatlanaveenreddy1@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span>Call Me</span>
+                                    <a href="tel:+919063969219">+91 90639 69219</a><br>
+                                    <a href="tel:+917569623949">+91 75696 23949</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span>Location</span>
+                                    <p>54-20-3694, Ziauddin Nagar, 2nd Line (Colony), Guntur, Andhra Pradesh, India - 522001</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-socials">
+                            <a href="https://github.com/gatlanaveenreddy1" target="_blank" rel="noopener noreferrer" aria-label="GitHub Link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/naveen-reddy-gatla/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-panel glass-card">
+                        <form id="contact-form" action="https://formsubmit.co/gatlanaveenreddy1@gmail.com" method="POST" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name</label>
+                                    <div class="input-wrapper">
+                                        <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+                                        <i class="fa-solid fa-user input-icon"></i>
+                                    </div>
+                                    <span class="error-msg" id="name-error">Please enter your name</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Your Email</label>
+                                    <div class="input-wrapper">
+                                        <input type="email" id="form-email" name="email" placeholder="john@example.com" required>
+                                        <i class="fa-solid fa-envelope input-icon"></i>
+                                    </div>
+                                    <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="form-subject" name="subject" placeholder="Project Discussion" required>
+                                    <i class="fa-solid fa-pen-nib input-icon"></i>
+                                </div>
+                                <span class="error-msg" id="subject-error">Please write a subject line</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <div class="input-wrapper">
+                                    <textarea id="form-message" name="message" rows="5" placeholder="Hey Naveen, let's collaborate on a web application project..." required></textarea>
+                                    <i class="fa-solid fa-comment input-icon-textarea"></i>
+                                </div>
+                                <span class="error-msg" id="message-error">Please write a message</span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <i class="fa-solid fa-paper-plane send-icon"></i>
+                            </button>
+                        </form>
+                        
+                        <!-- Form Success Overlay State -->
+                        <div class="form-success-state" id="form-success">
+                            <div class="success-icon-wrapper">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h3>Message Sent!</h3>
+                            <p>Thank you for reaching out. Naveen will get back to you shortly.</p>
+                            <button class="btn btn-secondary btn-sm" id="reset-form-btn">Send Another Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <p class="copyright">&copy; Gatla Naveen Reddy</p>
+                <div class="footer-contacts">
+                    <a href="mailto:gatlanaveenreddy1@gmail.com"><i class="fa-solid fa-envelope"></i> gatlanaveenreddy1@gmail.com</a>
+                    <span class="footer-sep">•</span>
+                    <a href="tel:+919063969219"><i class="fa-solid fa-phone"></i> +91 90639 69219</a>
+                    <span class="footer-sep">•</span>
+                    <a href="https://www.linkedin.com/in/naveen-reddy-gatla/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#training">Training</a>
+                <a href="#projects">Projects</a>
+                <a href="#coding-profiles">Coding Profiles</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
